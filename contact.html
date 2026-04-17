@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact BOKU School</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts with Hindi Support -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="index.html">
+      <i class="fas fa-school me-2"></i>BOKU School
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">होम</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">परिचय</a></li>
+        
+        <li class="nav-item"><a class="nav-link active" href="contact.html">संपर्क</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== PAGE HEADER ========== -->
+<section class="page-header bg-danger text-white py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">हमसे संपर्क करें</h1>
+    <p class="lead">हम आपसे सुनना पसंद करेंगे</p>
+  </div>
+</section>
+
+<!-- ========== MAIN CONTENT ========== -->
+<section class="py-5">
+  <div class="container">
+    
+    <div class="row g-4">
+      
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        
+        <div class="card shadow border-0 mb-4">
+          <div class="card-body text-center p-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.4637123456!2d86.2173556!3d26.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec60a2b3c4d4d5%3A0x1a2b3c4d5e6f7g8h!2sAMAHA%20PIPRA%2C%20SUPAUL!5e0!3m2!1sen!2sin!4v1655000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h5 class="fw-bold">पता</h5>
+            <p class="text-muted">
+              BOKU - UHS अमहा पिपरा<br>
+              सुपौल, बिहार<br>
+              भारत
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mb-4">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-phone fa-3x text-success mb-3"></i>
+            <h5 class="fw-bold">फोन</h5>
+            <p class="text-muted">
+              कार्यालय: +91 7549692848<br>
+              मोबाइल: +91 7549692848<br>
+              <small class="text-muted">सोमवार-शनिवार, 9 AM - 5 PM</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 mb-4">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+            <h5 class="fw-bold">ईमेल</h5>
+            <p class="text-muted">
+              bokuuhsamaha@gmail.com<br>
+              
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow border-0 bg-light">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-clock fa-3x text-warning mb-3"></i>
+            <h5 class="fw-bold">कार्यालय का समय</h5>
+            <p class="text-muted">
+              सोमवार - शनिवार<br>
+              9:00 AM - 5:00 PM<br>
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="card shadow border-0">
+          <div class="card-header bg-danger text-white">
+            <h5 class="fw-bold mb-0">हमें एक संदेश भेजें</h5>
+          </div>
+          <div class="card-body p-4">
+            <form id="contactForm">
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="contactName" class="form-label fw-bold">आपका नाम <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="contactName" placeholder="अपना नाम दर्ज करें" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="contactEmail" class="form-label fw-bold">ईमेल पता <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="अपना ईमेल दर्ज करें" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="contactPhone" class="form-label fw-bold">फोन नंबर <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="contactPhone" placeholder="अपना फोन नंबर दर्ज करें" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="subject" class="form-label fw-bold">विषय <span class="text-danger">*</span></label>
+                  <select class="form-select" id="subject" required>
+                    <option value="">-- विषय चुनें --</option>
+                    <option value="Admission Inquiry">प्रवेश पूछताछ</option>
+                    <option value="General Question">सामान्य प्रश्न</option>
+                    <option value="Feedback">प्रतिक्रिया</option>
+                    <option value="Other">अन्य</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold">संदेश <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" rows="5" placeholder="अपना संदेश यहां दर्ज करें..." required></textarea>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="contactTerms" required>
+                  <label class="form-check-label" for="contactTerms">
+                    मैं सहमत हूं कि BOKU स्कूल उपरोक्त जानकारी का उपयोग करके मुझसे संपर्क कर सकता है।
+                  </label>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-danger btn-lg">
+                  <i class="fas fa-send me-2"></i>संदेश भेजें
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Map Section -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3 class="fw-bold mb-4 text-center">नक्शे पर हमें खोजें</h3>
+        <div class="card shadow border-0">
+          <div class="card-body p-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.4637123456!2d86.2173556!3d26.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec60a2b3c4d4d5%3A0x1a2b3c4d5e6f7g8h!2sAMAHA%20PIPRA%2C%20SUPAUL!5e0!3m2!1sen!2sin!4v1655000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3"><i class="fas fa-school me-2"></i>BOKU स्कूल</h5>
+        <p class="text-light">गुणवत्तापूर्ण शिक्षा प्रदान करना और उज्ज्वल भविष्य का निर्माण करना।</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">त्वरित लिंक</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-decoration-none text-light hover-link">होम</a></li>
+          <li><a href="about.html" class="text-decoration-none text-light hover-link">परिचय</a></li>
+          <li><a href="admission.html" class="text-decoration-none text-light hover-link">प्रवेश</a></li>
+          <li><a href="contact.html" class="text-decoration-none text-light hover-link">संपर्क</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">संपर्क जानकारी</h5>
+        <p class="text-light"><i class="fas fa-map-marker-alt me-2"></i>अमहा पिपरा, सुपौल, बिहार</p>
+        <p class="text-light"><i class="fas fa-envelope me-2"></i>bokuuhsamaha@gmail.com</p>
+        <p class="text-light"><i class="fas fa-phone me-2"></i>+91 7549692848</p>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <div class="text-center">
+      <p class="mb-0 text-light">&copy; 2026 BOKU स्कूल। सर्वाधिकार सुरक्षित।</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for contacting us! We will get back to you soon.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
